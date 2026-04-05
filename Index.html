@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetireWise Master Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0b0f1a; color: #94a3b8; line-height: 1.6; }
+        .section-box { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+        h1, h2, h3 { color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: -0.025em; }
+        .accent { color: #3b82f6; }
+        .tag { background: #1e293b; color: #3b82f6; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+    </style>
+</head>
+<body class="p-6 pb-20">
+
+    <header class="mb-12 text-center">
+        <h1 class="text-4xl italic mb-2 tracking-tighter">RetireWise <span class="accent">OS</span></h1>
+        <p class="text-sm text-slate-500">Master Infrastructure & Strategic Blueprint v3.1</p>
+        <div class="mt-4 flex justify-center gap-2">
+            <span class="tag">UK 2027 COMPLIANT</span>
+            <span class="tag">GLOBAL DOMICILE</span>
+        </div>
+    </header>
+
+    <section class="section-box border-t-2 border-blue-500">
+        <h2 class="text-xl mb-4 border-b border-slate-800 pb-2">01 Executive Summary</h2>
+        <p class="text-sm mb-4">RetireWise is a <span class="text-white">Wealth Intelligence Engine</span> built to solve the advice gap. It models a person’s complete financial reality from the present through death and generational wealth transfer.</p>
+        <ul class="text-xs space-y-2 text-slate-400">
+            <li>• Dual Audience: Novice UI / Expert Engine.</li>
+            <li>• Mandate: April 2027 UK Pension IHT Compliance.</li>
+        </ul>
+    </section>
+
+    <section class="section-box">
+        <h2 class="text-xl mb-4 border-b border-slate-800 pb-2">03 Calculation & Rules</h2>
+        <p class="text-sm mb-4">Deterministic math engine that triggers based on <span class="text-white">Domicile Status</span>. For UK Domiciled users, the engine enforces a worldwide tax mandate.</p>
+        <div class="bg-slate-900 p-4 rounded-lg text-[10px] font-mono text-emerald-400">
+            IF User.Domicile == "UK" THEN <br>
+            &nbsp;&nbsp;Calculate_Worldwide_IHT(Assets.Global)<br>
+            &nbsp;&nbsp;Apply_DTR_Credit(Foreign_Tax_Paid)
+        </div>
+    </section>
+
+    <section class="section-box">
+        <h2 class="text-xl mb-4 border-b border-slate-800 pb-2">18 Engineering Specs</h2>
+        <h3 class="text-sm mb-2 accent uppercase">The Tech Stack</h3>
+        <p class="text-xs text-slate-400 mb-4">Python 3.11 (FastAPI) for math + React for the frontend. PostgreSQL handles the State Layer (ACID compliant).</p>
+        <h3 class="text-sm mb-2 accent uppercase">Development Roadmap</h3>
+        <div class="mermaid">
+            graph TD
+            A[Rule Registry] --> B[Fact Ingestion]
+            B --> C[Monte Carlo Engine]
+            C --> D[2027 Delta UI]
+        </div>
+    </section>
+
+    <section class="section-box border-l-4 border-rose-600">
+        <h2 class="text-xl mb-4 text-rose-500 uppercase">19 The 2027 Tax Delta</h2>
+        <p class="text-sm text-slate-300 italic mb-4">"The structural pivot for the UK retirement market."</p>
+        <p class="text-xs leading-relaxed mb-4">Starting April 2027, pensions are included in the taxable estate. RetireWise models the <span class="text-white">Tax Delta</span>—the difference between current exemptions and future liabilities.</p>
+        <div class="bg-rose-500/10 p-3 rounded border border-rose-500/20 text-[10px] text-rose-300">
+            Logic: Recalculate Estate (Exemptions -> Taxable) @ 40% Rate
+        </div>
+    </section>
+
+    <section class="section-box border-l-4 border-emerald-600">
+        <h2 class="text-xl mb-4 text-emerald-500 uppercase">20 Global Asset Layer</h2>
+        <p class="text-sm mb-4">For UK Domiciled individuals, all overseas assets (Property, Businesses, Accounts) are normalized to GBP and evaluated for <span class="text-white">Double Taxation Relief (DTR)</span>.</p>
+        <div class="bg-slate-800 p-3 rounded text-[10px] text-slate-400">
+            Trace: Foreign Asset -> Domicile Check -> FX Conversion -> IHT Evaluation
+        </div>
+    </section>
+
+    <footer class="text-center mt-12">
+        <p class="text-[10px] text-slate-700 uppercase font-bold tracking-widest">End of Master Blueprint v3.1</p>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+</body>
+</html>
 
